@@ -1,0 +1,83 @@
+1. getRadius()
+
+class circle {
+    constructor (radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    get Radius(){
+        return this.radius
+    }
+}
+
+let circle1 = new circle ("1.0", "red");
+
+console.log(circle1.Radius);
+
+----------------------------------------------------------------------------
+2. getColor()
+
+class circle {
+    constructor (radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    get Color(){
+        return this.color
+    }
+}
+
+let circle1 = new circle ("1.0", "red");
+
+console.log(circle1.Color);
+
+------------------------------------------------------------------------
+3. getArea()
+
+class circle {
+    constructor (radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    get Area() {
+    return Math.PI * this.radius * this.radius;
+    }
+}
+
+let circle1 = new circle ("1.0", "red");
+
+console.log(circle1.Area);
+
+-----------------------------------------------------------------------
+4. getcircumference()
+
+class circle {
+    constructor (radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    getCircumference() {
+    return 2 * Math.PI * this.radius;
+  }
+}
+
+const myCircle = new circle(1.0, "red");
+console.log(myCircle.getCircumference());
+
+--------------------------------------------------------------------
+5. toString()
+
+class circle {
+    constructor (radius, color){
+        this.radius = radius;
+        this.color = color;
+    }
+    gettoString() {
+    return `Circle [radius=${this.radius}, color=${this.color}]`;
+  }
+}
+
+const myCircle = new circle(1.0, "red");
+console.log(myCircle.gettoString());
+
+----------------------------------------------------------------------

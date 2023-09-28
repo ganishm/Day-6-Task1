@@ -1,0 +1,25 @@
+class cinema {
+  constructor(title, studio, rating = "PG") {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+
+  static getPG(movieArr) {
+    return movieArr.filter(movie => movie.rating === "PG");
+  }
+}
+
+// Create an instance of the Movie class
+const cinema1 = new cinema("Casino Royale", "Eon Productions", "PG-13");
+
+// Example usage of the getPG method
+const movies = [
+  new cinema("Movie 1", "Studio A", "PG"),
+  new cinema("Movie 2", "Studio B", "R"),
+  new cinema("Movie 3", "Studio C", "PG"),
+  new cinema("Movie 4", "Studio D", "PG-13"),
+];
+
+const cinema2 = cinema.getPG(movies);
+console.log(cinema2);

@@ -1,0 +1,12 @@
+class person {
+    constructor (name, age, native, profession, email){
+        this.name = name;
+        this.age = age;
+        this.native = native;
+        this.profession = profession;
+        this.email = email;
+    }
+}
+
+let person1 = new person ("Vikram", 27, "Trichy", "Developer", "vikrammsd@gmail.com")
+console.log (person1);
